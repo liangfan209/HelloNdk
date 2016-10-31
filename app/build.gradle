@@ -28,7 +28,6 @@ android {
         }
     }
 
-
 //    sourceSets {
 //        main {
 //            jni.srcDirs = []
@@ -49,7 +48,6 @@ android {
 //    }
 //    clean.dependsOn cleanNative
 }
-
 
 //def getNdkDir() {
 //    if (System.env.ANDROID_NDK_ROOT != null)
@@ -73,10 +71,9 @@ android {
 //}
 
 
-
-
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:support-v4:24.2.0'
 }
